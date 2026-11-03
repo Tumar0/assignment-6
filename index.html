@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The party in motion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+  <header>
+    <h1>The Party, 19:30 – 22:30</h1>
+    <p>Click a case to spotlight, click a guest for a card, move guests between rooms, sort rooms by time.</p>
+  </header>
+
+  <main class="page"><div id="house"></div></main>
+
+  <section id="legend">
+    <span><i class="dot" style="background:#d94a4a"></i><i class="dot" style="background:#3b6fd4"></i><i class="dot" style="background:#2f9e6a"></i><i class="dot" style="background:#222"></i><i class="dot" style="background:#f0b429"></i><i class="dot" style="background:#8e5bd0"></i> Clothing color</span>
+    <span>📱 Phone</span><span>👓 Glasses</span><span>👜 Bag</span><span>☕ Cup</span><span>🍰 Cake crumbs</span>
+    <span>⏲ Arrival time</span><span>🎓 AITU student</span>
+  </section>
+
+  <section id="panel">
+    <div id="cases"></div>
+    <p><button id="clear">Clear</button></p>
+    <div id="result"><em>Choose a case.</em></div>
+  </section>
+
+  <div id="card"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="data.js"></script>
+  <script src="cases.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

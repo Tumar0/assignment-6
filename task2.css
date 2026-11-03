@@ -1,0 +1,22 @@
+/* Task 2 additions (loaded after style.css) */
+.guest { cursor: pointer; }
+.room h2 { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sort { font-size: 12px; padding: 3px 8px; }
+.sort.on { background: #ffe1a8; border-color: #c98a00; }
+
+.guest.slot { width: 0; height: 1px; margin: 0; padding: 0; cursor: default; }
+.guest.flying { position: absolute; z-index: 60; margin: 0; pointer-events: none; }
+
+#clear { background: #ffe9e9; border-color: #d98b8b; }
+
+#card {
+  position: absolute; z-index: 100; display: none; overflow: hidden;
+  background: #fff; border: 2px solid #333; box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+#card .inner { width: 290px; padding: 14px; }
+#card .head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+#card .head img { width: 56px; height: 56px; border-radius: 50%; border: 3px solid #333; background: #fff; }
+#card h3 { margin: 0; font-size: 18px; }
+#card ul { margin: 0 0 10px; padding-left: 18px; }
+#card .moves { display: flex; flex-direction: column; gap: 5px; }
+#card .moves button { text-align: center; }
